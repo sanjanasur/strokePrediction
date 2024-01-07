@@ -1,0 +1,73 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Form</title>
+</head>
+<body>
+    <h2>Enter Details for Prediction of Stroke in a patient</h2>
+    <form action="/predict" method="post">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+        
+        <label for = "age">Age</label>
+        <input type ="text" id="age" name="age"><br><br>
+
+        <label for = "Hypertension">Hypertension</label>
+        <select id="Hypertension" name="Hypertension">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+            
+        </select><br><br>
+
+        <label for = "HeartDisease">HeartDisease</label>
+        
+        <select id="HeartDisease" name="HeartDisease">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+            
+        </select><br><br>
+
+        <label for = "everMarried">everMarried</label>
+        <select id="everMarried" name="everMarried">
+            <option value="No">No</option>
+            <option value="Yes">Yes</option>
+            
+        </select><br><br>
+
+        <label for = "workType">workType</label>
+        <select id="workType" name="workType">
+            <option value="children">children</option>
+            <option value="govt job">govt_job</option>
+            <option value="never worked">never worked</option>
+            <option value="private">private</option>
+            <option value="self employed">self employed</option>
+            
+        </select><br><br>
+        
+        
+
+        <label for = "residenceType">residenceType</label>
+        <select id="residenceType" name="residenceType">
+            <option value="Rural">Rural</option>
+            <option value="Urban">Urban</option>
+            
+        </select><br><br>
+
+        <label for = "glucoseLevel">glucoseLevel</label>
+        <input type ="text" id="glucoseLevel" name="glucoseLevel"><br><br>
+
+        <label for = "BMI">BMI</label>
+        <input type ="text" id="BMI" name="BMI"><br><br>
+
+        
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
